@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact Tracing App for QR Code", "Contact Tracing App for QR Code.csproj", "{A2E90D87-844E-41B7-AC9C-6B78AC6157C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2E90D87-844E-41B7-AC9C-6B78AC6157C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E90D87-844E-41B7-AC9C-6B78AC6157C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E90D87-844E-41B7-AC9C-6B78AC6157C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E90D87-844E-41B7-AC9C-6B78AC6157C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9EDD9E0-E431-4640-AD32-5F7581422BA0}
+	EndGlobalSection
+EndGlobal
