@@ -70,7 +70,7 @@ namespace Contact_Tracing_App_for_QR_Code
 
            if (Qr_data != null)
             {
-                MessageBox.Show(Qr_data.ToString());
+                MessageBox.Show(Qr_data.ToString()); 
             }
         }
     }
