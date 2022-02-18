@@ -9,3 +9,13 @@ C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\D
 C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.csproj.CoreCompileInputs.cache
 C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.exe
 C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.pdb
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\AForge.dll
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\AForge.Video.dll
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\zxing.dll
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\zxing.presentation.dll
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\AForge.xml
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\AForge.Video.xml
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\zxing.xml
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\zxing.presentation.xml

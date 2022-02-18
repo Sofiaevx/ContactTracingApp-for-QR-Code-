@@ -33,17 +33,19 @@ namespace Contact_Tracing_App_for_QR_Code
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CameraDisplay = new System.Windows.Forms.PictureBox();
             this.ONOFFBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.synchronizer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxline = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.CameraDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxline)).BeginInit();
             this.SuspendLayout();
             // 
             // CameraDisplay
             // 
+            this.CameraDisplay.Image = ((System.Drawing.Image)(resources.GetObject("CameraDisplay.Image")));
             this.CameraDisplay.Location = new System.Drawing.Point(12, 12);
             this.CameraDisplay.Name = "CameraDisplay";
             this.CameraDisplay.Size = new System.Drawing.Size(250, 250);
+            this.CameraDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.CameraDisplay.TabIndex = 1;
             this.CameraDisplay.TabStop = false;
             // 
@@ -55,34 +57,39 @@ namespace Contact_Tracing_App_for_QR_Code
             this.ONOFFBtn.TabIndex = 2;
             this.ONOFFBtn.Text = "ON";
             this.ONOFFBtn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 250);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.ONOFFBtn.Click += new System.EventHandler(this.ONOFFBtn_Click);
             // 
             // synchronizer
             // 
             this.synchronizer.Enabled = true;
-            this.synchronizer.Interval = 500;
+            this.synchronizer.Interval = 1000;
+            this.synchronizer.Tick += new System.EventHandler(this.synchronizer_Tick);
+            // 
+            // pictureBoxline
+            // 
+            this.pictureBoxline.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxline.Image")));
+            this.pictureBoxline.Location = new System.Drawing.Point(-1, 12);
+            this.pictureBoxline.Name = "pictureBoxline";
+            this.pictureBoxline.Size = new System.Drawing.Size(273, 250);
+            this.pictureBoxline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxline.TabIndex = 3;
+            this.pictureBoxline.TabStop = false;
+            this.pictureBoxline.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 305);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxline);
             this.Controls.Add(this.ONOFFBtn);
             this.Controls.Add(this.CameraDisplay);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing App";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CameraDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxline)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -90,8 +97,8 @@ namespace Contact_Tracing_App_for_QR_Code
         #endregion
         private System.Windows.Forms.PictureBox CameraDisplay;
         private System.Windows.Forms.Button ONOFFBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer synchronizer;
+        private System.Windows.Forms.PictureBox pictureBoxline;
     }
 }
 
