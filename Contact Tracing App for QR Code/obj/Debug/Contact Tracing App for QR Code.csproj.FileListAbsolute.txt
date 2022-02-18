@@ -1,0 +1,11 @@
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\Contact Tracing App for QR Code.exe.config
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\Contact Tracing App for QR Code.exe
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\bin\Debug\Contact Tracing App for QR Code.pdb
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.csproj.AssemblyReference.cache
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact_Tracing_App_for_QR_Code.Form1.resources
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact_Tracing_App_for_QR_Code.Loading.resources
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact_Tracing_App_for_QR_Code.Properties.Resources.resources
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.csproj.GenerateResource.cache
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.csproj.CoreCompileInputs.cache
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.exe
+C:\Users\Jv Cataquiz\OOP\ContactTracingApp\Contact Tracing App for QR Code\obj\Debug\Contact Tracing App for QR Code.pdb
