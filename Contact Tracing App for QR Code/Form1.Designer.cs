@@ -29,10 +29,12 @@ namespace Contact_Tracing_App_for_QR_Code
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CameraDisplay = new System.Windows.Forms.PictureBox();
             this.ONOFFBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.synchronizer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CameraDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +65,11 @@ namespace Contact_Tracing_App_for_QR_Code
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // synchronizer
+            // 
+            this.synchronizer.Enabled = true;
+            this.synchronizer.Interval = 500;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -84,6 +91,7 @@ namespace Contact_Tracing_App_for_QR_Code
         private System.Windows.Forms.PictureBox CameraDisplay;
         private System.Windows.Forms.Button ONOFFBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer synchronizer;
     }
 }
 
