@@ -12,7 +12,6 @@ using System.IO;
 using AForge; 
 using ZXing;
 using ZXing.Aztec;
-using System.Diagnostics;
 using AForge.Video.DirectShow;
 using AForge.Video;
 
@@ -70,8 +69,31 @@ namespace Contact_Tracing_App_for_QR_Code
 
            if (Qr_data != null)
             {
-                MessageBox.Show(Qr_data.ToString()); 
+
+                string Location= "Data.txt";
+                StreamWriter datafile = File.AppendText(Location);
+
+                datafile.WriteLine("\n\n");
+                datafile.WriteLine("Date: " + DateTime.Now.ToString());
+                datafile.WriteLine(Qr_data.ToString());
+              
+                datafile.Close();
+                synchronizer.Stop();
+     
+                this.Hide();
+                Loading loading = new Loading();
+                loading.Show();
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            qrdisplay.Stop();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            qrdisplay.Stop();
         }
     }
 }

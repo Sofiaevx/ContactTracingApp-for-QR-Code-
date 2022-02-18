@@ -29,10 +29,12 @@ namespace Contact_Tracing_App_for_QR_Code
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loading));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelscan = new System.Windows.Forms.Label();
             this.Viewbtn = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +49,16 @@ namespace Contact_Tracing_App_for_QR_Code
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // labelscan
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 35);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Scan Completed";
- 
+            this.labelscan.AutoSize = true;
+            this.labelscan.Font = new System.Drawing.Font("Microsoft Yi Baiti", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelscan.Location = new System.Drawing.Point(15, 67);
+            this.labelscan.Name = "labelscan";
+            this.labelscan.Size = new System.Drawing.Size(234, 35);
+            this.labelscan.TabIndex = 1;
+            this.labelscan.Text = "Scan Completed";
+            this.labelscan.Visible = false;
             // 
             // Viewbtn
             // 
@@ -67,6 +69,14 @@ namespace Contact_Tracing_App_for_QR_Code
             this.Viewbtn.TabIndex = 2;
             this.Viewbtn.Text = "View";
             this.Viewbtn.UseVisualStyleBackColor = true;
+            this.Viewbtn.Visible = false;
+            this.Viewbtn.Click += new System.EventHandler(this.Viewbtn_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Loading
             // 
@@ -75,11 +85,12 @@ namespace Contact_Tracing_App_for_QR_Code
             this.ClientSize = new System.Drawing.Size(275, 164);
             this.ControlBox = false;
             this.Controls.Add(this.Viewbtn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelscan);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Loading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";
+            this.Load += new System.EventHandler(this.Loading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -89,7 +100,8 @@ namespace Contact_Tracing_App_for_QR_Code
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelscan;
         private System.Windows.Forms.Button Viewbtn;
+        private System.Windows.Forms.Timer timer1;
     }
 }

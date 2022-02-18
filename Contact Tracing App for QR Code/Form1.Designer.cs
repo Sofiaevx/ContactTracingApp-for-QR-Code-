@@ -41,6 +41,7 @@ namespace Contact_Tracing_App_for_QR_Code
             // 
             // CameraDisplay
             // 
+            this.CameraDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.CameraDisplay.Image = ((System.Drawing.Image)(resources.GetObject("CameraDisplay.Image")));
             this.CameraDisplay.Location = new System.Drawing.Point(12, 12);
             this.CameraDisplay.Name = "CameraDisplay";
@@ -68,7 +69,7 @@ namespace Contact_Tracing_App_for_QR_Code
             // pictureBoxline
             // 
             this.pictureBoxline.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxline.Image")));
-            this.pictureBoxline.Location = new System.Drawing.Point(-1, 12);
+            this.pictureBoxline.Location = new System.Drawing.Point(-1, 10);
             this.pictureBoxline.Name = "pictureBoxline";
             this.pictureBoxline.Size = new System.Drawing.Size(273, 250);
             this.pictureBoxline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -87,6 +88,8 @@ namespace Contact_Tracing_App_for_QR_Code
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing App";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CameraDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxline)).EndInit();
